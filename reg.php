@@ -5,7 +5,7 @@
 <h2 class="text-center">Welcome in Kumawat Samaj</h2>
 <div class="row">
 <div class="col-md-12">
-
+sasadsdsad
 <form >
 <div class="form-group; col-lg-6  " >
  

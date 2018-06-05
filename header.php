@@ -38,9 +38,9 @@
     </div>
   </div>
   <div class="col-sm-4">
-    <p>
-<form >
-<div class="form-group well">
+   
+<form  class="well">
+
 <label>Looking for</label>&nbsp;&nbsp;&nbsp;&nbsp;
 <label><input type="radio" name="gender" value="Bride">Bride</label>&nbsp;&nbsp;&nbsp;
 <label><input type="radio" name="gender" value="Groom">Groom</label><br>
@@ -55,17 +55,18 @@
 <br>
 
 <label> Age from </label>
-<select class="form-control" id="sel1" style="width:40%">
+<div class="form-control" >
+<select  id="sel1" style="width:40%">
 
-          		<option value="18">18</option><option value="19">19</option><option value="20" selected="selected">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option>      
+          		<option value="18">18</option><option value="19">19</option><option value="20"  >20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option>      
               
    
-  </select> <label>To </label><select class="form-control" id="sel1" style="width:40%">
+  </select> <label>To &nbsp; </label><select  id="sel1" style="width:40%">
 
-          		<option value="18">18</option><option value="19">19</option><option value="20" selected="selected">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option>      
-              
+          		<option value="18">18</option><option value="19">19</option><option value="20" selected="selected">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option>             
    
   </select>
+  </div>
 <br>
 <label>Select State </label>
 <select name="stName"  class="form-control">
@@ -104,11 +105,8 @@
 <button type="submit" class="btn btn-success" name="t" >Search</button>
 <button type="reset" class="btn btn-danger" name="t" >Reset</button>
 </form>
-</div>
 
-    
-    </p>
   </div>
 </div>
-<hr>
+
 </div>

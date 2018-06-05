@@ -1,3 +1,17 @@
+<?php
+
+if(isset($_REQUEST['action']) AND $_REQUEST['action']=="msg") 
+{
+  echo "<h1>your data has been saved sucessfully</h1>";
+}
+
+
+$con=mysql_connect("localhost","root","");
+  mysql_select_db("user_registration",$con);
+
+  ?>
+
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -6,19 +20,24 @@
 <div class="row">
 <div class="col-md-12">
 
-<form >
+<form name="r" method="POST" action="t_reg.php"  >
 <div class="form-group; col-lg-6  " >
  
 <label>Name</label>
-<input type="text" name="t1"  class="form-control" placeholder="Enter the Name" />
+<input type="text" name="r1"  class="form-control" placeholder="Enter the Name" />
 <label>UserName</label>
-<input type="text" name="t1"  class="form-control" placeholder="Enter the UserName" />
+<input type="text" name="r2"  class="form-control" placeholder="Enter the UserName" />
 <label>Email Address</label>
-<input type="text" name="t1"  class="form-control" placeholder="Enter the Email" />
+<input type="text" name="r3"  class="form-control" placeholder="Enter the Email" />
 
+<label>Gender</label>
+<div class="form-control">
+  <input type="radio" name="gender" value="male"   /> Male 
+  <input type="radio" name="gender" value="female" /> Female
+  </div>
 
 <label>Mobile no</label>
-<input type="text" name="t3" class="form-control" placeholder="Enter the mobile no"/>
+<input type="text" name="r4" class="form-control" placeholder="Enter the mobile no"/>
 <label>Age</label>
 <select name="age" class="form-control" >
 <option value="0"> Select Your age </option>
@@ -27,17 +46,13 @@
    
   </select>
 
-<label>Gender</label>
-<div class="form-control">
-  <input type="radio" name="gender" value="male"   /> Male 
-  <input type="radio" name="gender" value="female" /> Female
-  </div>
+
 <label>Address</label>
 <textarea name="address" class="form-control" placeholder="Enter the Address" ></textarea>
 <label>City</label>
-<input type="text" name="t4" class="form-control" placeholder="Enter the city Name" />
+<input type="text" name="r5" class="form-control" placeholder="Enter the city Name" />
 <label>State</label>
-<select name="stName"  class="form-control " >
+<select name="r6"  class="form-control " >
     <option value="0">---Select State Name---</option>
     <option value="AS">Assam</option>
     <option value="BR">Bihar</option>
@@ -69,26 +84,26 @@
 
 </select>
 <label> Marital Status </label>
-<select class="form-control" id="sel1">
+<select name="r7" class="form-control" id="sel1">
 <option value="never">Never married</option>
     <option value="single">Married in past, now single</option>
    
   </select>
   
   
-  <label> Educaton</label>
- <input type="text" name="t7"  class="form-control" placeholder="Enter the Education" />
+  <label> Education</label>
+ <input type="text" name="r8"  class="form-control" placeholder="Enter the Education" />
 
 <label>Hobbies</label>
-<div class="form-control">
-<label class="checkbox-inline" ><input type="checkbox" name="Hobbies" value="football"  > Football</label>
- <label class="checkbox-inline"><input type="checkbox" name="Hobbies" value="cricket" >Cricket</label>
+<div    class="form-control">
+<label   class="checkbox-inline" ><input type="checkbox" name="r9" value="football"  > Football</label>
+ <label class="checkbox-inline"><input type="checkbox" name="r9" value="cricket" >Cricket</label>
  </div>
  
  <br>
  <br>
-<button type="submit" class="btn btn-success" name="t" >Submit</button>
-<button type="reset" class="btn btn-danger" name="t" >Reset</button>
+<button type="submit" class="btn btn-success" name="r10" >Submit</button>
+<button type="reset" class="btn btn-danger" name="r10" >Reset</button>
 
 </div>
 

@@ -37,18 +37,20 @@ $con=mysql_connect("localhost","root","");
                                 
                                  
                                
-                                $result=mysql_query($query);
-                                
-                                  echo $result;
-                                  die();
+                                 $result=mysql_query($query);
+
+                                echo $result;
+                                die();
 
 
                                 if ($result>0) 
                                 {
-                                   
-                                   echo "fil data";
+                                    
+                                    ?>
+                                    <script language="javascript">
+    window.location.href="reg.php?action=msg";
 
-
- 
+</script>
+<?php
                                 }
 ?>

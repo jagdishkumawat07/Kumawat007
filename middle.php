@@ -14,5 +14,11 @@ if(isset($_REQUEST[ 'action']) && $_REQUEST['action']=="business")
 	include('business.php');
 }
 
+if(isset($_REQUEST['action']) && $_REQUEST['action']=="news")
+{
+	include('news.php');
+}
+
+
 
 ?>

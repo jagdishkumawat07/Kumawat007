@@ -1,8 +1,8 @@
 <?php
 
-if(isset($_REQUEST['action']) AND $_REQUEST['action']=="msg") 
+ if(isset($_REQUEST['action']) AND $_REQUEST['action']=="msg") 
 {
-  echo "<h1>your data has been saved sucessfully</h1>";
+  echo "<h1>Your account successfully created </h1>";
 }
 
 

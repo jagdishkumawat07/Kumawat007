@@ -14,7 +14,7 @@
         <li class="active"><a href="index.php">Home</a></li>
         <li><a href="index.php?action=reg">SignUp</a></li>
         <li><a href="#">Download</a></li>
-          <li><a href="#">Latest News</a></li>
+          <li><a href="index.php?action=news">Latest News</a></li>
              <li><a href="index.php?action=business">Register Your Business</a></li>
         <li><a href="#">Matrimonial</a></li>
          <li><a href="#">Contact</a></li>
